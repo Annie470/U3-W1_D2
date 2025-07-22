@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 function CustomNav() {
   return (
     <Navbar expand="lg" className="bg-warning">
-      <Container>
+      <Container fluid>
         <Navbar.Brand href="#home">Zilla Lib</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

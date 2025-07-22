@@ -4,9 +4,9 @@ import Col from 'react-bootstrap/Col';
 
 function Footer() {
   return (
-    <Container>
-      <Row>
-        <Col> CatZilla &copy; {new Date().getFullYear()}</Col>
+    <Container className='bg-warning m-0' fluid >
+      <Row className='p-2'>
+        <Col className='text-end'> CatZilla &copy; {new Date().getFullYear()}</Col>
       </Row>
     </Container>
   );
