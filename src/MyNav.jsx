@@ -6,12 +6,12 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function CustomNav() {
   return (
-    <Navbar expand="lg" className="bg-body-warning">
+    <Navbar expand="lg" className="bg-warning">
       <Container>
         <Navbar.Brand href="#home">Zilla Lib</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="ms-auto">
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#link">About</Nav.Link>
             <Nav.Link href="#link">Browse</Nav.Link>
