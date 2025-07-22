@@ -1,4 +1,4 @@
-import { Container, Row, Col, Card} from 'react-bootstrap';
+import { Container, Row, Col, Card, Button} from 'react-bootstrap';
 import horrorBooks from './assets/data/horror.json';
 
 function CardsContainer() {
@@ -11,10 +11,11 @@ function CardsContainer() {
      <Col key={book.asin} xs={12} md={4} lg={3}>
        <Card className="h-100 d-flex flex-column " style={{ minHeight: '350px' }}>
 <Card.Img variant="top" src={book.img} className="card-img-fixed" />
-      <Card.Body>
-        <Card.Title>{book.title}</Card.Title>
-        <Card.Text>{book.price}</Card.Text>
+      <Card.Body className='d-flex flex-column'>
+        <Card.Title className='flex-grow-1'>{book.title}</Card.Title>
+        <Card.Text>{book.price}€</Card.Text>
         <Card.Text>Categoria: {book.category}</Card.Text>
+        <Button className='bg-warning border-0 w-50 mx-auto'>Compra</Button>
       </Card.Body>
     </Card>
     </Col>
