@@ -1,0 +1,5 @@
+.card-img-fixed {
+  height: 200px; /* o l’altezza che preferisci */
+  object-fit: cover;
+  object-position: center;
+}

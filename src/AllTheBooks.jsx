@@ -10,7 +10,7 @@ function CardsContainer() {
             return (
      <Col key={book.asin} xs={12} md={4} lg={3}>
        <Card className="h-100 d-flex flex-column " style={{ minHeight: '350px' }}>
-      <Card.Img src={book.img} className='flex-grow-1'/>
+<Card.Img variant="top" src={book.img} className="card-img-fixed" />
       <Card.Body>
         <Card.Title>{book.title}</Card.Title>
         <Card.Text>{book.price}</Card.Text>
