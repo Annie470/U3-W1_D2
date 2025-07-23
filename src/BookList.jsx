@@ -16,14 +16,14 @@ return (
     <>
     <Container className="d-flex flex-column align-items-center bg-warning-subtle" fluid>
  <Form.Group className="w-50 mt-3" controlId="searchbar">
-        <Form.Control
+        <Form.Control className="border border-warning"
           type="text"
           placeholder="Cerca.."
           value={this.state.cercato}
           onChange={(e) => this.setState({ cercato: e.target.value })}
         />
       </Form.Group>
-    <Container className="py-4">
+    <Container fluid className="py-3 w-75">
         <Row className="justify-content-center gy-2">
       {filtrati.map((book) => (
           <Col xs={12} md={4} lg={3} key={book.asin}>

@@ -3,9 +3,9 @@ import { Container } from 'react-bootstrap';
 
 function Welcome() {
   return (
-    <Container fluid className='bg-warning-subtle py-2'>
+    <Container fluid className='bg-warning-subtle py-3 border-top border-black'>
     <Alert variant="light" className='text-center border-1 border-warning w-50 mx-auto my-0'>
-      <Alert.Heading className='display-2'>CatZilla Library</Alert.Heading>
+      <Alert.Heading className='display-1'>CatZilla Library</Alert.Heading>
       <p>
      La tua e-library preferita!
       </p>

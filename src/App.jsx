@@ -2,10 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import CustomNav from './MyNav'
 import Footer from './MyFooter'
 import Welcome from './Welcome'
-import CardsContainer from './AllTheBooks'
-import SingleBook from './SingleBook'
+// import CardsContainer from './AllTheBooks'
+// import SingleBook from './SingleBook'
 
-import horrorBooks from './assets/data/horror.json';
+// import horrorBooks from './assets/data/horror.json';
+import scifiBooks from './assets/data/scifi.json';
 import BookList from './BookList'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   <Welcome />
   {/* <CardsContainer /> */}
   {/* <SingleBook book={horrorBooks[8]}/> */}
-  <BookList arrayBook={horrorBooks} />
+  <BookList arrayBook={scifiBooks} />
   <Footer/>
     </>
   )
