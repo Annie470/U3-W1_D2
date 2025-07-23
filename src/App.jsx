@@ -6,6 +6,7 @@ import CardsContainer from './AllTheBooks'
 import SingleBook from './SingleBook'
 
 import horrorBooks from './assets/data/horror.json';
+import BookList from './BookList'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
   <Welcome />
   {/* <CardsContainer /> */}
   {/* <SingleBook book={horrorBooks[8]}/> */}
+  <BookList arrayBook={horrorBooks} />
   <Footer/>
     </>
   )
