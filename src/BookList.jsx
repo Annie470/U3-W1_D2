@@ -7,10 +7,9 @@ class BookList extends Component {
             cercato : ""
         }
     render () {
-          const { arrayBook } = this.props;
-          const { cercato } = this.state;
-    const filtrati = arrayBook.filter((book) =>
-      book.title.toLowerCase().includes(cercato.toLowerCase())
+        //   const { arrayBook } = this.props;
+    const filtrati =this.props.arrayBook.filter((book) =>
+      book.title.toLowerCase().includes(this.state.cercato.toLowerCase())
     );
 return (
     <>
