@@ -7,7 +7,8 @@ class BookList extends Component {
             cercato : ""
         }
     render () {
-        //   const { arrayBook } = this.props;
+        //   const { arrayBook } = this.props per scrivere dopo direttamente
+        // const filtrati = arrayBook.filter etc..;
     const filtrati =this.props.arrayBook.filter((book) =>
       book.title.toLowerCase().includes(this.state.cercato.toLowerCase())
     );

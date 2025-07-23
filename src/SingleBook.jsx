@@ -1,6 +1,13 @@
 import { Card, Col } from "react-bootstrap";
+import { Component } from "react";
 
-const SingleBook =({book})=> {
+class SingleBook extends Component {
+  state = {
+    active : false
+  }
+  
+  render() {
+    const {book} = this.props
 return (
             <Card className="h-100 d-flex flex-column " style={{ minHeight: '350px' }}>
 <Card.Img variant="top" src={book.img} className="card-img-fixed" />
@@ -9,5 +16,5 @@ return (
         </Card.Body>
     </Card>
 )
-}
+}}
 export default SingleBook
