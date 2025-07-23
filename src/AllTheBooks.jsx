@@ -8,7 +8,7 @@ function CardsContainer() {
         {console.log(horrorBooks)}
         { horrorBooks.map((book) => {
             return (
-     <Col key={book.asin} xs={12} md={4} lg={3}>
+     <Col key={book.asin} xs={12} md={3} lg={2}>
        <Card className="h-100 d-flex flex-column " style={{ minHeight: '350px' }}>
 <Card.Img variant="top" src={book.img} className="card-img-fixed" />
       <Card.Body className='d-flex flex-column'>
