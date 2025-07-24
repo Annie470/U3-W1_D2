@@ -28,13 +28,14 @@ class SingleComment extends Component {
 
     return (
       <>
+      <h6 className="text-center mt-1">Recensioni:</h6>
         <ListGroup>
           <ListGroup.Item key={this.props.comment._id} className="text-dark">
-            <h5 className="text-danger">{this.props.comment.author}</h5>
+            <h6 className="text-danger">{this.props.comment.author}</h6>
             <p>{this.props.comment.comment}</p>
-            <h6 className="text-end">
+            <p className="text-end">
               {new Date(this.props.comment.createdAt).toLocaleDateString()}
-            </h6>
+            </p>
             <div className="text-end">
               <Button variant="danger" size="sm" onClick={this.delComm}>
                 Elimina

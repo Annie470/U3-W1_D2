@@ -47,7 +47,9 @@ class AddComment extends Component {
 
   render() {
     return (
-      <Form onSubmit={this.postComm} className="text-center">
+      <>
+      <h6 className="text-center mb-0">Commenta:</h6>
+      <Form onSubmit={this.postComm} className="text-end p-3">
         <Form.Group controlId="commentAdd" className="mb-2">
           <Form.Control
             type="email"
@@ -101,10 +103,10 @@ class AddComment extends Component {
           />
         </Form.Group>
 
-        <Button className="bg-warning mb-2" type="submit" variant="primary">
+        <Button className="bg-warning mb-2 border-0" type="submit" variant="primary">
           Invia
         </Button>
-      </Form>
+      </Form></>
     );
   }
 }
