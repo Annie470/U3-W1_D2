@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Alert, ListGroup } from 'react-bootstrap';
 import CommentList from './CommentList';
+import AddComment from './AddComment';
 
 class CommentArea extends Component {
   state = {
@@ -37,6 +38,7 @@ class CommentArea extends Component {
         {this.state.isError && (
           <Alert variant="danger">Errore</Alert>
         )}
+        <AddComment id= {this.props.id}/>
         <CommentList comments={this.state.comments}/>
       </>
     );
