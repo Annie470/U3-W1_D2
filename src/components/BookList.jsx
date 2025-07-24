@@ -27,7 +27,8 @@ return (
         <Row className="justify-content-center gy-2">
       {filtrati.map((book) => (
           <Col xs={12} md={4} lg={3} key={book.asin}>
-        <SingleBook  book={book} /></Col>
+        <SingleBook  book={book} />
+        </Col>
       ))}
       </Row>
       </Container>
