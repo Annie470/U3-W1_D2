@@ -11,6 +11,7 @@ class AddComment extends Component {
     },
   };
 
+
   postComm = (e) => {
     e.preventDefault();
 
@@ -46,7 +47,7 @@ class AddComment extends Component {
 
   render() {
     return (
-      <Form onSubmit={this.postComm}>
+      <Form onSubmit={this.postComm} className="text-center">
         <Form.Group controlId="commentAdd" className="mb-2">
           <Form.Control
             type="email"
@@ -100,7 +101,7 @@ class AddComment extends Component {
           />
         </Form.Group>
 
-        <Button type="submit" variant="primary">
+        <Button className="bg-warning mb-2" type="submit" variant="primary">
           Invia
         </Button>
       </Form>
